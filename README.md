@@ -22,36 +22,58 @@
 ![JWT](https://img.shields.io/badge/JWT-Secure-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A secure **user authentication system** with **Spring Boot**, **JWT**, and **MySQL**. Users can register and login using **username or email**, and receive a **JWT token** for stateless authentication.
+A **full-stack authentication system** built with **Spring Boot**, **JWT**, and **MySQL**. Users can **register and login using username or email**, and get a **secure JWT token** for stateless authentication. Includes password encryption, JWT validation, and optional forgot password functionality.
 
 ---
 
-## ⚡ Features
+## 🔥 Features
 
-- Register with username, email & password  
-- Login using username or email  
-- JWT token generation and validation  
-- Password hashing with **BCrypt**  
-- Stateless session management with **Spring Security**  
-- Optional forgot password functionality  
-
----
-
-## 🛠 Tech Stack
-
-| Layer           | Technology                       |
-|-----------------|---------------------------------|
-| Backend         | Java 17, Spring Boot             |
-| Database        | MySQL 8                          |
-| Authentication  | JWT (JSON Web Token)             |
-| Password Security | BCryptPasswordEncoder           |
-| Build Tool      | Maven                            |
+- ✅ User **registration** with username, email, and password  
+- ✅ **Login** using username or email  
+- ✅ **JWT token** generation and validation  
+- ✅ **Password hashing** using BCrypt  
+- ✅ **Spring Security** integration  
+- ✅ Stateless session management  
+- ✅ Optional **Forgot Password** functionality  
 
 ---
 
-## 🚀 Installation & Setup
+## 🛠️ Tech Stack
 
-1. **Clone the repo**  
+| Layer             | Technology                                      |
+|------------------|------------------------------------------------|
+| Backend           | Java 17, Spring Boot, Spring Security         |
+| Database          | MySQL 8                                        |
+| Authentication    | JWT (JSON Web Token)                           |
+| Password Security | BCryptPasswordEncoder                           |
+| Build Tool        | Maven                                          |
+
+---
+
+## 📂 Project Structure
+
+src/main/java/com/ayush/authBackend  
+│  
+├── config          # Security & Password configurations (PasswordConfig, SecurityConfig)  
+├── controller      # REST Controllers (AuthController)  
+├── dto             # Request & Response DTOs (LoginRequest, RegisterRequest, AuthResponse)  
+├── entity          # JPA Entities (User)  
+├── repository      # Spring Data JPA Repositories (UserRepository)  
+├── security        # JWT filter, CustomUserDetailsService & Security configurations  
+├── service         # Business logic & JWT handling (AuthService, JwtService)  
+
+src/main/resources  
+│  
+├── application.properties  # Spring Boot configuration  
+
+pom.xml                    # Maven build file  
+
+---
+
+## ⚙️ How to Run the Application
+
+### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/ayushRanjan4/jwt-login-system.git
 cd jwt-login-system
