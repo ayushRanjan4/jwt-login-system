@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Ayush Ranjan</h1>
-<h3 align="center">Java & Spring Boot Developer | JWT Auth Enthusiast | Full Stack Dev</h3>
+<h3 align="center">Java & Spring Boot Developer | JWT Auth Enthusiast</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&width=700&lines=Building+Secure+Spring+Boot+Apps;JWT+Authentication;Full+Stack+Development" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&width=700&lines=Building+Secure+Spring+Boot+Apps;JWT+Authentication" alt="Typing SVG"/>
 </p>
 
 <p align="center">
