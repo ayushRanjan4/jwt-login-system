@@ -1,0 +1,13 @@
+<div class="dashboard-container">
+  <h2>Dashboard</h2>
+  <p>Welcome to your JWT secured dashboard!</p>
+
+  <div *ngIf="userInfo" class="user-info">
+    <h3>User Information</h3>
+    <p><strong>Username:</strong> {{ userInfo.username || 'N/A' }}</p>
+    <p><strong>Email:</strong> {{ userInfo.email || 'N/A' }}</p>
+    <p><strong>Token Expires:</strong> {{ userInfo.exp ? (userInfo.exp * 1000 | date:'medium') : 'N/A' }}</p>
+  </div>
+
+  <button (click)="logout()" class="logout-btn">Logout</button>
+</div>
